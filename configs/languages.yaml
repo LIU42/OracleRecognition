@@ -1,0 +1,12 @@
+main-title: "Oracle Recognition [甲骨文识别工具]"
+open-title: "选取图像"
+save-title: "保存结果"
+
+file-menu: "文件(F)"
+help-menu: "帮助(H)"
+
+open-action: "打开(O)"
+save-action: "保存(S)"
+exit-action: "退出(Q)"
+
+types-description: "图像文件 (*.jpg) ;; 图像文件 (*.jpeg) ;; 图像文件 (*.png) ;; 图像文件 (*.bmp)"
