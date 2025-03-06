@@ -15,11 +15,11 @@ from PyQt5.QtWidgets import QGraphicsView
 import inferences.inference as inference
 
 
-with open('configs/languages.yaml', 'r', encoding='utf-8') as languages:
-    languages = yaml.load(languages, Loader=yaml.FullLoader)
+with open('views/configs/languages.yaml', 'r', encoding='utf-8') as languages:
+    languages = yaml.load(languages, Loader=yaml.SafeLoader)
 
 
-class MainWindow(QMainWindow):
+class AppMainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         self.source_image = None

@@ -4,8 +4,8 @@ import yaml
 import numpy as np
 
 
-with open('configs/inference.yaml', 'r') as configs:
-    configs = yaml.load(configs, Loader=yaml.FullLoader)
+with open('inferences/configs/inference.yaml', 'r') as configs:
+    configs = yaml.load(configs, Loader=yaml.SafeLoader)
 
 detection_session = ort.InferenceSession(configs['detection-model-path'], providers=configs['session-providers'])
 character_session = ort.InferenceSession(configs['character-model-path'], providers=configs['session-providers'])
